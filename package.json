@@ -9,7 +9,7 @@
     "dev": "tsc --watch && npm i -g",
     "npm-publish": "npm version patch && tsc && npm publish"
   },
-  "author": "sanket kheni",
+  "author": "sanketkheni",
   "license": "MIT",
   "dependencies": {
     "appium-adb": "^9.7.0",
