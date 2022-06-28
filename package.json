@@ -1,6 +1,6 @@
 {
   "name": "adb-wireless",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Connect your devices to your computer wirelessly",
   "main": "./dist/index.js",
   "scripts": {
@@ -23,6 +23,20 @@
   },
   "bin": {
     "adb-wireless": "dist/index.js"
+  },
+  "keywords": [
+    "adb",
+    "adb-wlan",
+    "wireless debugging",
+    "adb wireless"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanketkheni01/adb-wireless.git"
+  },
+  "homepage": "https://github.com/sanketkheni01/adb-wireless",
+  "bugs": {
+    "url": "https://github.com/sanketkheni01/adb-wireless/issues"
   },
   "type": "module",
   "devDependencies": {
