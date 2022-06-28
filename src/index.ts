@@ -1,11 +1,16 @@
 #! /usr/bin/env node
 
 import { program } from 'commander'
+import fs from 'fs-extra'
 import nconf from 'nconf'
+import { getConfigHome } from 'platform-folders'
 import connect from './utils/connect.js'
 import pair from './utils/pair/index.js'
 
-nconf.file({ file: './config.json' })
+const configPath = `${getConfigHome()}/adb_wireless`
+
+fs.ensureDirSync(configPath)
+nconf.file({ file: `${configPath}/config.json` })
 nconf.load()
 
 program

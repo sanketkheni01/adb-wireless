@@ -48,7 +48,7 @@ Open setting on your android device and enable wireless debugging from developer
 <img src="https://github.com/sanketkheni01/adb-wireless/blob/master/images/wireless%20debugging.jpg?raw=true" width="200">
 <td>
 
-And scan qr code from wireless debugging
+Scan pair qr code from wireless debugging
 
 </td>
 </tr>
