@@ -1,6 +1,6 @@
 {
   "name": "adb-wireless",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Connect your devices to your computer wirelessly",
   "main": "./dist/index.js",
   "scripts": {
