@@ -3,6 +3,7 @@
 import { program } from 'commander'
 import nconf from 'nconf'
 import connect from './utils/connect.js'
+import pair from './utils/pair/index.js'
 
 nconf.file({ file: './config.json' })
 nconf.load()
@@ -14,9 +15,9 @@ program
   .option('-p, --port <port>', 'The port to connect to', parseInt)
   .action(connect)
 
-// program
-//   .command('pair')
-//   .description('Generate a pairing qr code for your android device')
-//   .action(pair)
+program
+  .command('pair')
+  .description('Generate a pairing qr code for your android device')
+  .action(pair)
 
 program.parse()
