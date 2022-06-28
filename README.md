@@ -8,7 +8,7 @@ npm i -g adb-wireless
 
 Open setting on your android device and enable wireless debugging from developer tools
 
-![alt text](https://github.com/sanketkheni01/adb-wireless/blob/master/images/developer_settings.jpg?raw=true)
+<img src="https://github.com/sanketkheni01/adb-wireless/blob/master/images/developer_settings.jpg?raw=true" width="200">
 
 ## Pair
 
@@ -18,7 +18,7 @@ adb-wireless pair
 
 And scan qr code from wireless debugging
 
-![alt text](https://github.com/sanketkheni01/adb-wireless/blob/master/images/wireless%20debugging.jpg?raw=true)
+<img src="https://github.com/sanketkheni01/adb-wireless/blob/master/images/wireless%20debugging.jpg?raw=true" width="200">
 
 ## Connect
 
