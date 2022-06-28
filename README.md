@@ -9,7 +9,7 @@ npm i -g adb-wireless
 open setting on your android device and enable wireless debugging from developer tools and run to connect the android device
 
 ```
-adb-wireless -i {device-ip} -p {port}
+adb-wireless connect -i {device-ip}
 ```
 
 Next time you want to connect your device just run
