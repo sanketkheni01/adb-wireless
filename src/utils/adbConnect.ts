@@ -7,7 +7,7 @@ export default function adbConnect(ip: string, port: number) {
     err && console.log(err)
     if (stdout) {
       if (stdout.startsWith('failed to connect')) {
-        console.log(`First pair your device => "adb-wireless pair"`)
+        console.log(`First pair your device => "adb pair ${ip}:{port}"`)
       } else {
         console.log(stdout)
       }
