@@ -11,9 +11,9 @@ async function startMdnsScanQr(
   reject: Function
 ): Promise<void> {
   //Timer variable to dispose everything if no device connect within 30 sec.
-  var timer: NodeJS.Timeout
+  let timer: NodeJS.Timeout
 
-  var scanner: bonjour.Browser = bonjour().find(
+  const scanner: bonjour.Browser = bonjour().find(
     { type: 'adb-tls-pairing' },
     async function (service: any) {
       // console.log(service)
@@ -24,7 +24,7 @@ async function startMdnsScanQr(
           service.port
         )
 
-        var isPaired = AdbPair(device, password)
+        let isPaired = AdbPair(device, password)
 
         if (isPaired) {
           console.log('ADB QR: Device Paired Successfully')
@@ -34,7 +34,7 @@ async function startMdnsScanQr(
             scanner.stop()
             bonjour().destroy()
             clearTimeout(timer)
-            resolve()
+            resolve({ ip: device.ipAddress })
           })
         } else {
           reject('ADB QR: Unable to pair device')
@@ -52,7 +52,7 @@ async function startMdnsScanQr(
   })
 
   scanner.on('down', () => {
-    console.log('down')
+    // console.log('down')
   })
 
   timer = setTimeout(() => {

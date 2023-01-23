@@ -1,7 +1,7 @@
 // @ts-ignore
 import Evilscan from 'evilscan'
 
-export default function isPortActive(port: number, ip: string) {
+export default function isPortActive(port: number | undefined, ip: string) {
   const options = {
     target: ip,
     port: port,
